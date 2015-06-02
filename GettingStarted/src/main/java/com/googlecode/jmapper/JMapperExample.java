@@ -1,18 +1,15 @@
 package com.googlecode.jmapper;
 
-import org.apache.log4j.PropertyConfigurator;
-
 import com.googlecode.jmapper.api.enums.MappingType;
 import com.googlecode.jmapper.api.enums.NullPointerControl;
-import com.googlecode.jmapper.bean.Destination;
-import com.googlecode.jmapper.bean.Source;
 import com.googlecode.jmapper.enums.ChooseConfig;
+import com.googlecode.jmapper.relations.implicit.bean.Destination;
+import com.googlecode.jmapper.relations.implicit.bean.Source;
 
 
 public class JMapperExample {
 
 	public static void main(String[] args){
-		PropertyConfigurator.configure("log4j.properties");
 		
 		Source      source      = new Source("id", "sourceField", "sourceInfo");
 		Destination destination = new Destination("2", "destinationField", "destinationInfo");
@@ -23,7 +20,7 @@ public class JMapperExample {
 		MappingType mtDestination = MappingType.ONLY_VALUED_FIELDS;
 		
 		
-		JMapper<Destination,Source> jmapper = new JMapper<Destination,Source>(Destination.class, Source.class,ChooseConfig.DESTINATION,"xml/jmapper.xml");
+		JMapper<Destination,Source> jmapper = new JMapper<Destination,Source>(Destination.class, Source.class,ChooseConfig.DESTINATION,"com/googlecode/jmapper/jmapper.xml");
 		
 		// demonstrations of getDestination signature
 		result = jmapper.getDestination(source);
