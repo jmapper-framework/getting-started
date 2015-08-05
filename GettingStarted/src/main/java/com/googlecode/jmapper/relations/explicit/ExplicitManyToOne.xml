@@ -1,0 +1,28 @@
+<jmapper xmlns="https://jmapper-framework.googlecode.com" xmlns:xsi="https://jmapper-framework.googlecode.com/svn" xsi:noNamespaceSchemaLocation="https://jmapper-framework.googlecode.com/svn/jmapper-1.3.1.xsd">
+  <class name="com.googlecode.jmapper.relations.explicit.bean.AnnotatedClass">
+    <attribute name="field1">
+      <value name="^field1.*"/>
+      <classes>
+        <class name="com.googlecode.jmapper.relations.explicit.bean.Class1"/>
+        <class name="com.googlecode.jmapper.relations.explicit.bean.Class2"/>
+        <class name="com.googlecode.jmapper.relations.explicit.bean.Class3"/>
+      </classes>
+    </attribute>
+    <attribute name="field2">
+      <value name="^field2.*"/>
+      <classes>
+        <class name="com.googlecode.jmapper.relations.explicit.bean.Class1"/>
+        <class name="com.googlecode.jmapper.relations.explicit.bean.Class2"/>
+        <class name="com.googlecode.jmapper.relations.explicit.bean.Class3"/>
+      </classes>
+    </attribute>
+    <attribute name="field3">
+      <value name="^field3.*"/>
+      <classes>
+        <class name="com.googlecode.jmapper.relations.explicit.bean.Class1"/>
+        <class name="com.googlecode.jmapper.relations.explicit.bean.Class2"/>
+        <class name="com.googlecode.jmapper.relations.explicit.bean.Class3"/>
+      </classes>
+    </attribute>
+  </class>
+</jmapper>
